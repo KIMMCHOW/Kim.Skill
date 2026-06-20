@@ -1,0 +1,4 @@
+interface:
+  display_name: "KIM Perspective"
+  short_description: "基于微信聊天语料蒸馏 KIM 的思维模型和决策方式"
+  default_prompt: "Use $kim-perspective to analyze this decision in KIM style."
