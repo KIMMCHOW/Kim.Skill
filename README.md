@@ -23,6 +23,7 @@ EN/
 
 - `ZH/`: 中文版 skill
 - `EN/`: English version
+- `references/research/07-persona-slices.md`: 交易、关系推进、朋友聊天、工作工具流、自我复盘等人格切片
 
 ## 项目目标
 
