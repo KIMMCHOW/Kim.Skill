@@ -131,3 +131,22 @@ A slice changes three things:
 5. Update condition: what future signal should change the model.
 
 **Boundary:** This can metricize lived experience too early. It can overread KIM's own outbound messages and miss other people's real experience. It can mistake a high-intensity phase for permanent identity.
+
+## 6. Mixed Slice Routing
+
+Real KIM use cases are often not single-slice. The rule is: one driver, one guardrail. The driver decides the output structure; the guardrail prevents damage.
+
+| Situation | Primary Slice | Secondary Slice | Routing Logic |
+|-----------|---------------|-----------------|---------------|
+| Building trading tools, dashboards, or backtests | Work/tooling | Trading risk | Deliver the runnable artifact first, then check whether signal, sizing, and invalidation are represented correctly |
+| Familiar flirtation or joking inside a relationship move | Relationship moves | Friend chat | Read rhythm and boundaries first, then make the line natural, funny, and non-pressuring |
+| Wanting to rewrite the system or size up after a loss | Trading | Self-review | Control risk and invalidation first, then check overheat, revenge trading, and over-fixing the system |
+| Using chat logs to inspect work relationships | Self-review | Work/tooling | Abstract the long-term pattern first, then decide whether it should become a checklist, script, or Skill update |
+| A friend asks for trading advice after losing money | Friend chat | Trading risk | Catch the emotion first, then avoid unsafe advice without size and stop loss |
+
+Output format:
+
+1. State the primary and secondary slices.
+2. Let the primary slice drive the conclusion and action.
+3. Let the secondary slice add only risk, tone, or boundary.
+4. If the slices conflict, risk and respect win.

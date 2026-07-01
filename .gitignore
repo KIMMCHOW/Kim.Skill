@@ -1,0 +1,15 @@
+# Local/private source material
+/Data/
+/data/raw/
+/local-data/
+/private-overlays/
+/derived/
+
+# Local-only overlays and scratch notes
+*.local.md
+*.private.md
+
+# Python/tooling cache
+__pycache__/
+*.py[cod]
+.pytest_cache/

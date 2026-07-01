@@ -24,6 +24,10 @@ EN/
 - `ZH/`: 中文版 skill
 - `EN/`: English version
 - `references/research/07-persona-slices.md`: 交易、关系推进、朋友聊天、工作工具流、自我复盘等人格切片
+- `evals/persona-routing.md`: 人格切片回归测试题
+- `tools/public_safe_wechat_stats.py`: 公开安全的聚合统计脚本
+- `private-overlays.example.md`: 本地私有 overlay 模板，真实 overlay 不进 GitHub
+- `CHANGELOG.md`: 蒸馏版本记录
 
 ## 项目目标
 
@@ -82,6 +86,20 @@ C:\Users\zhouz\.codex\skills\nuwa-skill\SKILL.md
 6. **验证**：用真实问题测试是否「像我」、是否有用、是否过拟合。
 7. **迭代**：根据新聊天、新项目、新复盘持续更新。
 
+## 回归测试
+
+人格切片使用 [evals/persona-routing.md](evals/persona-routing.md) 做手动回归。每次更新 Skill 后，至少跑一轮交易、关系推进、朋友聊天、工作工具流、自我复盘和混合切片问题，确认输出没有变成泛泛 AI 味，也没有越过隐私边界。
+
+## 本地私有 Overlay
+
+公开仓库只保留脱敏模型。更具体、更尖锐、不能公开的证据层放在本地：
+
+```text
+private-overlays/
+```
+
+该目录已被 `.gitignore` 忽略。可从 [private-overlays.example.md](private-overlays.example.md) 复制模板到 `private-overlays/*.local.md` 使用。
+
 ## 使用方式
 
 中文入口：
@@ -124,10 +142,11 @@ EN/SKILL.md
 
 ## 路线图
 
-- [ ] 定义原始资料的本地目录结构和忽略规则。
-- [ ] 增加数据清洗与脱敏脚本。
-- [ ] 增加 Skill 校验和回归测试样例。
-- [ ] 建立版本化的自我复盘记录。
+- [x] 定义原始资料的本地目录结构和忽略规则。
+- [x] 增加公开安全的聚合统计脚本。
+- [x] 增加 Skill 校验和回归测试样例。
+- [x] 建立版本化的自我复盘记录。
+- [x] 增加本地私有 overlay 约定。
 - [ ] 持续更新研究材料和使用边界。
 
 ## 校验
