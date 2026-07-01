@@ -1,40 +1,117 @@
 # Kim.Skill
 
-KIM 的个人思维 Skill，基于本地微信聊天记录的聚合分析蒸馏而成。
+这是一个把我的聊天记录、表达习惯、项目记录、交易/关系复盘、Codex 工作流等信息，蒸馏成「我自己的思维系统」的项目。
 
-This is KIM's personal thinking skill, distilled from aggregated analysis of locally exported WeChat records.
+目标不是保存原始隐私数据，而是把高频行为、判断方式、表达 DNA、决策启发式和盲点抽象出来，做成可复用、可调用、可迭代的 personal skill / agent profile。
 
-## 目录
+Remote repository: [KIMMCHOW/Kim.Skill](https://github.com/KIMMCHOW/Kim.Skill)
+
+## 当前产物
+
+本仓库当前包含 KIM 的个人思维 Skill，基于本地微信聊天记录的聚合分析蒸馏而成。
+
+```text
+ZH/
+  SKILL.md
+  agents/openai.yaml
+  references/research/
+EN/
+  SKILL.md
+  agents/openai.yaml
+  references/research/
+```
 
 - `ZH/`: 中文版 skill
 - `EN/`: English version
 
-两套目录结构一致：
+## 项目目标
+
+- 从聊天记录和个人资料中提取长期稳定的行为模式。
+- 把「我会怎么判断」沉淀成结构化规则，而不是只停留在感觉。
+- 把表达方式、风险偏好、决策习惯和复盘方式做成可调用的 Skill。
+- 在保护隐私的前提下，让 AI 能更像我一样分析问题、拆路径、给动作。
+- 随着新资料和新复盘持续迭代，而不是一次性定型。
+
+## 数据来源
+
+本地私有资料目录：
 
 ```text
-SKILL.md
-agents/openai.yaml
-references/research/
+D:\Coding\我TM蒸馏我自己？\Data
 ```
+
+需要蒸馏的聊天记录、导出数据、个人资料、复盘文档等原始材料都放在这个目录下。这个目录用于本地分析，不作为远端仓库内容提交。
+
+未来可以纳入的材料包括：
+
+- 微信、Telegram、Discord、X、邮件等聊天或公开表达记录
+- Codex / ChatGPT 对话与任务记录
+- 项目 README、issue、commit、复盘文档
+- 交易日志、决策记录、风险复盘
+- 长文、笔记、语音转文字、朋友圈/推文等表达材料
+- 他人反馈中可用于识别盲点的聚合信息
+
+原则：原始资料优先留在本地；进入仓库的内容应尽量是脱敏后的摘要、统计、模式和框架。
+
+## 蒸馏工具链
+
+使用聊天记录蒸馏「我自己的 Skill」时，核心方法来自 `$huashu-nuwa`（女娲 · Skill造人术）：
+
+```text
+C:\Users\zhouz\.codex\skills\nuwa-skill\SKILL.md
+```
+
+女娲的定位不是复制聊天原文，而是从材料中提炼 HOW I think：
+
+- 我用什么心智模型看世界。
+- 我用什么决策启发式做判断。
+- 我怎么表达，什么语气和节奏最像我。
+- 我反复避开什么反模式。
+- 这个 Skill 的诚实边界在哪里。
+
+因为这是「蒸馏我自己」，流程默认走本地语料模式：优先分析聊天记录、个人文章、项目复盘、决策备忘录和其他一手素材；公开搜索只作为补充，不作为主要依据。
+
+## 蒸馏流程
+
+1. **收集**：整理原始资料，保留来源、时间范围和格式说明。
+2. **清洗**：去重、脱敏、修复编码、过滤无关内容。
+3. **分析**：提取主题、表达习惯、行为模式、决策记录、风险偏好和重复盲点。
+4. **抽象**：把材料压缩成心智模型、启发式、角色规则和使用边界。
+5. **生成**：使用 `$huashu-nuwa` 输出 `SKILL.md`、agent 配置、研究摘要和参考材料。
+6. **验证**：用真实问题测试是否「像我」、是否有用、是否过拟合。
+7. **迭代**：根据新聊天、新项目、新复盘持续更新。
 
 ## 使用方式
 
-中文使用 `ZH/SKILL.md`。
+中文入口：
 
-English users should start from `EN/SKILL.md`.
+```text
+ZH/SKILL.md
+```
 
-触发场景包括：
+English users should start from:
+
+```text
+EN/SKILL.md
+```
+
+适合使用的场景：
 
 - 用 KIM 的视角分析问题
 - 判断一个项目、关系、交易或工具工作流
 - 复盘自己的行为模式
 - 把模糊直觉拆成变量、风险和下一步动作
+- 生成更贴近自己表达方式的分析、建议或行动清单
 
 ## 隐私边界
 
-本仓库不包含原始微信聊天记录。
-
-研究材料只保留聚合统计、模式总结和抽象后的判断框架。`summary.json` 已移除原始聊天样本。
+- 不提交原始聊天记录。
+- 不提交 `D:\Coding\我TM蒸馏我自己？\Data` 里的原始资料。
+- 不提交未经处理的私人对话样本。
+- 不复述他人的隐私内容。
+- 只保留聚合统计、抽象模型、脱敏摘要和可公开的结构化说明。
+- `summary.json` 已移除原始聊天样本。
+- 涉及交易、财务、法律、医疗等高风险问题时，Skill 只能提供分析框架，不能替代专业判断。
 
 ## 核心模型
 
@@ -43,6 +120,14 @@ English users should start from `EN/SKILL.md`.
 - 市场化不确定性 / Marketized Uncertainty
 - 高能压缩 / High-Energy Compression
 - 先执行再校准 / Execute First, Calibrate After
+
+## 路线图
+
+- [ ] 定义原始资料的本地目录结构和忽略规则。
+- [ ] 增加数据清洗与脱敏脚本。
+- [ ] 增加 Skill 校验和回归测试样例。
+- [ ] 建立版本化的自我复盘记录。
+- [ ] 持续更新研究材料和使用边界。
 
 ## 校验
 
